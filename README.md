@@ -11,6 +11,7 @@
 * **Bootstrap 5.3:** Grilla responsiva, componentes nativos y utilidades de Flexbox.
 * **Google Fonts:** Tipografías
 * **Font Awesome 6:** Iconografía para redes sociales y badges de tecnologías.
+* **Formspree:** Integración para el envío funcional de formularios sin backend.
 
 
 ## Declaración de Uso de Inteligencia Artificial
@@ -18,7 +19,7 @@
 En cumplimiento con el requisito transversal de la consigna, se detalla el uso de herramientas de IA generativa durante el desarrollo de este proyecto:
 
 * **Herramientas utilizadas y propósito:** 
-  * **Gemini:** Utilizada como asistente de código para maquetación en HTML5/CSS3, resolución de inconvenientes con el grid responsivo de Bootstrap 5 y organización de la jerarquía visual de los proyectos.
+  * **Gemini:** Utilizada como asistente de código para maquetación en HTML5/CSS3, resolución de inconvenientes con el grid responsivo de Bootstrap 5, configuración y prueba técnica del envío del formulario de contacto y organización de la jerarquía visual de los proyectos.
 * **Plan utilizado:** 
   * Plan 100% gratuito.
 * **Experiencia previa con la herramienta:** 
