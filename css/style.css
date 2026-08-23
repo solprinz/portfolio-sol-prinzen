@@ -1,0 +1,253 @@
+* {
+  font-family: "Noto Sans", sans-serif;
+}
+
+:root {
+  --rosa-claro: #f276bd;
+  --rosa-oscuro: #dd4389;
+  --gris: #6c757d;
+}
+
+.logo-header {
+  font-family: "Cinzel", serif;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+}
+.avatar-header {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.bg-pink {
+  background-color: var(--rosa-oscuro) !important;
+  color: white;
+}
+
+.links {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid transparent;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+}
+
+.links:hover,
+.links:focus,
+.links:active {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.secciones {
+  color: var(--rosa-oscuro);
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.secciones::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 4px;
+  background-color: var(--rosa-oscuro);
+  border-radius: 2px;
+}
+
+.avatar {
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hero-titulo {
+  font-family: "Cinzel", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 5px;
+  color: var(--rosa-oscuro);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.textos {
+  font-size: 1.2rem;
+  color: var(--gris);
+  margin-bottom: 0.5rem;
+}
+
+.card-proyecto {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitulo-hero {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 4px;
+  color: var(--gris);
+}
+
+.subtitulo-habilidad {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--gris);
+  letter-spacing: 0.5px;
+}
+
+.lista-habilidad {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.1rem;
+  color: var(--gris);
+}
+
+.btn-off {
+  background-color: white;
+  color: var(--rosa-oscuro);
+  border: 3px solid var(--rosa-oscuro);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-on {
+  background-color: var(--rosa-oscuro);
+  color: #ffffff;
+  border: 3px solid var(--rosa-oscuro);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-off:hover {
+  background-color: var(--rosa-oscuro);
+  color: #ffffff;
+  border-color: var(--rosa-oscuro);
+}
+
+.btn-on:hover {
+  background-color: white;
+  color: var(--rosa-oscuro);
+  border: 3px solid var(--rosa-oscuro);
+}
+
+.brands {
+  font-size: 1.2rem;
+  padding-right: 0.5rem;
+}
+
+.btn-demo {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.btn-codigo {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.img-web {
+  object-position: top;
+  height: 550px;
+}
+.img-mobile {
+  height: 620px;
+  object-fit: contain;
+  background-color: #f8f9fa;
+  padding: 12px;
+}
+
+.social-link {
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+  opacity: 0.9;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+  opacity: 1;
+  color: #ffffff !important;
+}
+
+/* ANIMACIÓN DEL TÍTULO PRINCIPAL */
+.titulo-animado {
+  display: inline-block;
+}
+
+.letra-anim {
+  display: inline-block;
+  color: var(--rosa-oscuro);
+  animation: iluminarRosa 3s linear infinite;
+}
+
+/* Animaciones en letras */
+.letra-anim:nth-child(1) {
+  animation-delay: 0s;
+}
+.letra-anim:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.letra-anim:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.letra-anim:nth-child(4) {
+  animation-delay: 0.6s;
+} /* Espacio */
+.letra-anim:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.letra-anim:nth-child(6) {
+  animation-delay: 1s;
+}
+.letra-anim:nth-child(7) {
+  animation-delay: 1.2s;
+}
+.letra-anim:nth-child(8) {
+  animation-delay: 1.4s;
+}
+.letra-anim:nth-child(9) {
+  animation-delay: 1.6s;
+}
+.letra-anim:nth-child(10) {
+  animation-delay: 1.8s;
+}
+
+.palabra {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .palabra {
+    display: inline-block;
+  }
+  .palabra:first-child {
+    margin-right: 0.3em;
+  }
+}
+
+@keyframes iluminarRosa {
+  0% {
+    color: var(--rosa-oscuro);
+    text-shadow: none;
+  }
+  50% {
+    color: var(--rosa-claro);
+    text-shadow:
+      0 0 12px var(--rosa-claro),
+      0 0 20px rgba(234, 76, 137, 0.3);
+  }
+  100% {
+    color: var(--rosa-oscuro);
+    text-shadow: none;
+  }
+}

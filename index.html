@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio de Sol Prinzen" />
+    <meta
+      name="keywords"
+      content="portfolio desarrollo web front end desarrolladora UI"
+    />
+    <title>SOL PRINZEN</title>
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- CSS PROPIO -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="./img/AvatarSol.png" />
+  </head>
+
+  <body>
+    <header class="sticky-top border-bottom shadow-sm bg-pink">
+      <nav class="navbar navbar-expand-md navbar-dark container py-3">
+        <a
+          class="navbar-brand fw-bold text-white logo-header d-flex align-items-center gap-2"
+          href="#"
+        >
+          <img
+            src="./img/AvatarSol.png"
+            alt="Avatar Sol Prinzen"
+            class="avatar-header rounded-circle"
+          />
+          <span class="logo-header">SOL PRINZEN</span>
+        </a>
+
+        <!-- BOTÓN HAMBURGUESA (MOBILE) -->
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- LINKS A SECCIONES -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul
+            class="navbar-list navbar-nav gap-md-3 mt-3 mt-md-0 align-items-center"
+          >
+            <li><a class="links" href="#sobre-mi">Sobre mí</a></li>
+            <li><a class="links" href="#habilidades">Habilidades</a></li>
+            <li>
+              <a class="links" href="#proyectos-mobile">Proyectos Mobile</a>
+            </li>
+            <li><a class="links" href="#proyectos-web">Proyectos Web</a></li>
+            <li><a class="links" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- 1. HERO / SOBRE MÍ -->
+      <section class="hero container my-5 py-4" id="sobre-mi">
+        <div class="row align-items-center gy-4">
+          <div class="col-12 col-md-7 text-center text-md-start">
+            <span class="subtitulo-hero"
+              >¡HOLA! BIENVENIDOS A MI PORTFOLIO</span
+            >
+            <h1 class="hero-titulo display-4 fw-bold mb-3 titulo-animado">
+              <span class="palabra">
+                <span class="letra-anim">S</span
+                ><span class="letra-anim">O</span
+                ><span class="letra-anim">L</span>
+              </span>
+              <span class="palabra">
+                <span class="letra-anim">P</span
+                ><span class="letra-anim">R</span
+                ><span class="letra-anim">I</span
+                ><span class="letra-anim">N</span
+                ><span class="letra-anim">Z</span
+                ><span class="letra-anim">E</span
+                ><span class="letra-anim">N</span>
+              </span>
+            </h1>
+
+            <p class="textos">Desarrolladora Web y Diseñadora UI.</p>
+            <p class="textos">
+              Actualmente cursando la Tecnicatura en Desarrollo de Software.
+            </p>
+            <p class="textos">
+              Apasionada por crear interfaces intuitivas y funcionales, con gran
+              capacidad de aprendizaje y disposición para enfrentar nuevos
+              desafíos.
+            </p>
+          </div>
+
+          <div class="col-12 col-md-5 text-center">
+            <img
+              src="./img/AvatarSol.png"
+              class="img-fluid avatar"
+              alt="Avatar de Sol Prinzen"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- HABILIDADES -->
+      <section class="habilidades container my-5" id="habilidades">
+        <h2 class="secciones">Mis Habilidades</h2>
+
+        <div class="d-flex flex-column gap-4 textos">
+          <!-- DESARROLLO WEB & MOBILE -->
+          <div>
+            <span class="subtitulo-habilidad">DESARROLLO WEB & MOBILE</span>
+            <div class="lista-habilidad">
+              <span
+                ><i class="fa-brands fa-html5 text-danger me-1"></i> HTML5</span
+              >•
+
+              <span
+                ><i class="fa-brands fa-css3-alt text-primary me-1"></i>
+                CSS3</span
+              >•
+              <span
+                ><i class="fa-brands fa-js text-warning me-1"></i>
+                JavaScript</span
+              >•
+              <span
+                ><i class="fa-brands fa-react text-info me-1"></i> React & React
+                Native</span
+              >•
+              <span
+                ><i class="fa-brands fa-android text-success me-1"></i>
+                Kotlin</span
+              >•
+              <span
+                ><i
+                  class="fa-brands fa-bootstrap me-1"
+                  style="color: #7952b3"
+                ></i>
+                Bootstrap</span
+              >
+            </div>
+          </div>
+
+          <!-- DISEÑO UI & GRÁFICO -->
+          <div>
+            <span class="subtitulo-habilidad">DISEÑO UI & GRÁFICO </span>
+            <div class="lista-habilidad">
+              <span
+                ><i class="fa-brands fa-figma me-1" style="color: #ea4c89"></i>
+                Figma</span
+              >•
+              <span
+                ><i class="fa-solid fa-pen-nib me-1" style="color: #31a8ff"></i>
+                Photoshop</span
+              >•
+              <span
+                ><i
+                  class="fa-solid fa-bezier-curve me-1"
+                  style="color: #ff9a00"
+                ></i>
+                Illustrator</span
+              >•
+              <span
+                ><i class="fa-solid fa-palette me-1" style="color: #6c757d"></i>
+                CorelDRAW</span
+              >
+            </div>
+          </div>
+
+          <!-- BASES DE DATOS & HERRAMIENTAS -->
+          <div>
+            <span class="subtitulo-habilidad">
+              BASES DE DATOS & HERRAMIENTAS
+            </span>
+            <div class="lista-habilidad">
+              <span
+                ><i class="fa-solid fa-fire text-warning me-1"></i>
+                Firebase</span
+              >•
+              <span
+                ><i class="fa-solid fa-database text-secondary me-1"></i>
+                SQLite</span
+              >•
+              <span
+                ><i
+                  class="fa-brands fa-git-alt me-1"
+                  style="color: #f05032"
+                ></i>
+                Git & GitHub</span
+              >•
+              <span
+                ><i class="fa-solid fa-code me-1" style="color: #007acc"></i> VS
+                Code</span
+              >•
+              <span
+                ><i
+                  class="fa-brands fa-android me-1"
+                  style="color: #3ddc84"
+                ></i>
+                Android Studio</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN PRINCIPAL: PROYECTOS -->
+      <section class="proyectos container my-5">
+        <h2 class="secciones">Mis Proyectos</h2>
+        <p class="textos">
+          A continuación comparto los proyectos que fui desarrollando a lo largo
+          de mi formación, integrando lo aprendido en diversos cursos y materias
+          académicas.
+        </p>
+        <!-- 1: PROYECTOS MOBILE -->
+        <div class="mb-5" id="proyectos-mobile">
+          <h3 class="h4 mb-4 pb-2 border-bottom">Proyectos Mobile</h3>
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- TARJETA: KITT APP -->
+            <div class="col">
+              <div class="card card-proyecto h-100 shadow-sm">
+                <img
+                  src="./img/KittApp-mobile.png"
+                  class="card-img-top img-mobile"
+                  alt="Captura de pantalla KITT APP"
+                />
+
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title h5">KITT APP - MOBILE</h4>
+                  <p class="card-text textos flex-grow-1">
+                    Aplicación móvil nativa desarrollada con React Native y Expo
+                    para la gestión y publicación de adopciones felinas. Permite
+                    conectar a personas que buscan adoptar con publicaciones de
+                    gatos en adopción, incluyendo datos de ubicación, edad,
+                    fotos e información de cuidado animal.
+                  </p>
+
+                  <div class="mb-3 d-flex gap-1 flex-wrap">
+                    <span class="brands"
+                      ><i class="fa-brands fa-react text-info me-1"></i>React
+                      Native</span
+                    >
+                    <span class="brands"
+                      ><i class="fa-brands fa-js text-warning me-1"></i
+                      >JavaScript</span
+                    >
+                    <span class="brands"
+                      ><i class="fa-solid fa-fire text-warning me-1"></i
+                      >Firebase</span
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="card-footer bg-transparent border-top-0 d-flex gap-2"
+                >
+                  <a
+                    href="https://www.figma.com/proto/SU5LkCcQRYOEkLF9q2pJtf/Prototipo-Prinzen?embed_host=share&kind=&node-id=114-1404&page-id=45%3A188&scaling=scale-down&starting-point-node-id=619%3A9380&viewport=748%2C1191%2C0.14"
+                    target="_blank"
+                    class="btn btn-demo btn-outline-dark btn-sm flex-fill text-center"
+                  >
+                    <i class="fa-solid fa-eye me-1"></i> Ver Demo
+                  </a>
+                  <a
+                    href="https://github.com/solprinz/KITT-APP"
+                    target="_blank"
+                    class="btn btn-codigo btn-dark btn-sm flex-fill text-center"
+                  >
+                    <i class="fa-brands fa-github me-1"></i> Ver Código
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- TARJETA: CLUB DEPORTIVO EMMA -->
+            <div class="col">
+              <div class="card card-proyecto h-100 shadow-sm">
+                <img
+                  src="./img/ClubDeportivo.png"
+                  class="card-img-top img-mobile"
+                  alt="Captura de pantalla CLUB DEPORTIVO EMMA"
+                />
+
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title h5">CLUB DEPORTIVO EMMA</h4>
+                  <p class="card-text textos flex-grow-1">
+                    Aplicación móvil desarrollada en Android Studio (Kotlin) con
+                    SQLite, diseñada para la gestión integral de socios, control
+                    de accesos, aptos físicos y pagos de un club deportivo. Este
+                    proyecto forma parte del desarrollo académico integrador,
+                    migrando y adaptando los requerimientos de un sistema a una
+                    experiencia mobile nativa.
+                  </p>
+
+                  <div class="mb-3 d-flex gap-1 flex-wrap">
+                    <span class="brands"
+                      ><i class="fa-brands fa-android text-success me-1"></i
+                      >Kotlin</span
+                    >
+                    <span class="brands"
+                      ><i
+                        class="fa-solid fa-mobile-screen-button text-primary me-1"
+                      ></i
+                      >Android Studio</span
+                    >
+                    <span class="brands"
+                      ><i class="fa-solid fa-database text-warning me-1"></i
+                      >SQLite</span
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="card-footer bg-transparent border-top-0 d-flex gap-2"
+                >
+                  <a
+                    href="https://github.com/solprinz/ClubDeportivo_Emma"
+                    target="_blank"
+                    class="btn btn-codigo btn-dark btn-sm flex-fill text-center"
+                  >
+                    <i class="fa-brands fa-github me-1"></i> Ver Código
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2: PROYECTOS WEB -->
+        <div class="mb-5" id="proyectos-web">
+          <h3 class="h4 mb-4 pb-2 border-bottom">Proyectos Web</h3>
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- TARJETA: GIMNERA -->
+            <div class="col">
+              <div class="card card-proyecto h-100 shadow-sm">
+                <img
+                  src="./img/Gimnera.png"
+                  class="card-img-top img-web"
+                  alt="Captura de pantalla GIMNERA"
+                />
+
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title h5">GIMNERA</h4>
+                  <p class="card-text textos flex-grow-1">
+                    Sitio web institucional y promocional desarrollado como
+                    proyecto final del curso de Desarrollo Web. Presenta un
+                    diseño moderno y adaptativo centrado en la experiencia de
+                    usuario para clientes de un centro deportivo.
+                  </p>
+
+                  <div class="mb-3 d-flex gap-1 flex-wrap">
+                    <span class="brands"
+                      ><i class="fa-brands fa-html5 text-danger me-1"></i
+                      >HTML5</span
+                    >
+                    <span class="brands"
+                      ><i class="fa-brands fa-css3-alt text-primary me-1"></i
+                      >CSS3</span
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="card-footer bg-transparent border-top-0 d-flex gap-2"
+                >
+                  <a
+                    href="https://gimnera.netlify.app/"
+                    target="_blank"
+                    class="btn btn-demo btn-outline-dark btn-sm flex-fill text-center"
+                  >
+                    <i class="fa-solid fa-eye me-1"></i> Ver Demo
+                  </a>
+                  <a
+                    href="https://github.com/solprinz/GIMNERA"
+                    target="_blank"
+                    class="btn btn-codigo btn-dark btn-sm flex-fill text-center"
+                  >
+                    <i class="fa-brands fa-github me-1"></i> Ver Código
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- TARJETA: KITT APP -->
+            <div class="col">
+              <div class="card card-proyecto h-100 shadow-sm">
+                <img
+                  src="./img/KittApp-Web.png"
+                  class="card-img-top img-web"
+                  alt="Captura de pantalla KITT APP"
+                />
+
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title h5">KITT APP</h4>
+                  <p class="card-text textos flex-grow-1">
+                    Sitio web dinámico e interactivo diseñado para promover y
+                    facilitar la adopción responsable de gatos, así como la
+                    publicación de mascotas en busca de hogar. Desarrollado a
+                    partir de un proceso integral de Diseño UX/UI, prototipado
+                    en Figma y publicado en Behance.
+                  </p>
+
+                  <div class="mb-3 d-flex gap-1 flex-wrap">
+                    <span class="brands"
+                      ><i class="fa-brands fa-html5 text-danger me-1"></i
+                      >HTML5</span
+                    >
+                    <span class="brands"
+                      ><i class="fa-brands fa-css3-alt text-primary me-1"></i
+                      >CSS3</span
+                    >
+                    <span class="brands"
+                      ><i class="fa-brands fa-js text-warning me-1"></i
+                      >JavaScript</span
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="card-footer bg-transparent border-top-0 d-flex gap-2"
+                >
+                  <a
+                    href="https://kitt-app.vercel.app/"
+                    target="_blank"
+                    class="btn btn-demo btn-outline-dark btn-sm flex-fill text-center"
+                  >
+                    <i class="fa-solid fa-eye me-1"></i> Ver Demo
+                  </a>
+                  <a
+                    href="https://github.com/solprinz/KittApp-Web"
+                    target="_blank"
+                    class="btn btn-codigo btn-dark btn-sm flex-fill text-center"
+                  >
+                    <i class="fa-brands fa-github me-1"></i> Ver Código
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- TARJETA: LUMOS -->
+            <div class="col">
+              <div class="card card-proyecto h-100 shadow-sm">
+                <img
+                  src="./img/Lumos.png"
+                  class="card-img-top img-web"
+                  alt="Captura de pantalla LUMOS"
+                />
+
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title h5">LUMOS</h4>
+                  <p class="card-text textos flex-grow-1">
+                    E-commerce desarrollado en React JS como proyecto final
+                    académico. Cuenta con catálogo dinámico por categorías,
+                    vista detallada de productos, carrito de compras en tiempo
+                    real e integración con base de datos en la nube.
+                  </p>
+
+                  <div class="mb-3 d-flex gap-1 flex-wrap">
+                    <span class="brands"
+                      ><i class="fa-brands fa-react text-info me-1"></i>React
+                      Js</span
+                    >
+                    <span class="brands"
+                      ><i class="fa-brands fa-js text-warning me-1"></i
+                      >JavaScript</span
+                    >
+                    <span class="brands"
+                      ><i class="fa-solid fa-palette text-primary me-1"></i
+                      >Material UI</span
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="card-footer bg-transparent border-top-0 d-flex gap-2"
+                >
+                  <a
+                    href="https://reactjsprinzen.vercel.app/"
+                    target="_blank"
+                    class="btn btn-demo btn-outline-dark btn-sm flex-fill text-center"
+                  >
+                    <i class="fa-solid fa-eye me-1"></i> Ver Demo
+                  </a>
+                  <a
+                    href="https://github.com/solprinz/LUMOS"
+                    target="_blank"
+                    class="btn btn-codigo btn-dark btn-sm flex-fill text-center"
+                  >
+                    <i class="fa-brands fa-github me-1"></i> Ver Código
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- TARJETA: VIAJA SEGURO -->
+            <div class="col">
+              <div class="card card-proyecto h-100 shadow-sm">
+                <img
+                  src="./img/ViajaSeguro.png"
+                  class="card-img-top img-web"
+                  alt="Captura de pantalla VIAJA SEGURO"
+                />
+
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title h5">VIAJÁ SEGURO</h4>
+                  <p class="card-text textos flex-grow-1">
+                    Aplicación web interactiva desarrollada como proyecto final
+                    del curso de JavaScript. Permite a los usuarios calcular y
+                    cotizar en tiempo real el costo de un seguro de viaje según
+                    el destino, la duración y la cantidad de pasajeros.
+                  </p>
+                  <div class="mb-3 d-flex gap-1 flex-wrap">
+                    <span class="brands">
+                      <i class="fa-brands fa-html5 text-danger me-1"></i
+                      >HTML5</span
+                    >
+                    <span class="brands"
+                      ><i class="fa-brands fa-css3-alt text-primary me-1"></i
+                      >CSS3</span
+                    >
+                    <span class="brands"
+                      ><i class="fa-brands fa-js text-warning me-1"></i
+                      >JavaScript</span
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="card-footer bg-transparent border-top-0 d-flex gap-2"
+                >
+                  <a
+                    href="https://solprinzen-viajaseguro.netlify.app/"
+                    target="_blank"
+                    class="btn btn-demo btn-outline-dark btn-sm flex-fill text-center"
+                  >
+                    <i class="fa-solid fa-eye me-1"></i> Ver Demo
+                  </a>
+                  <a
+                    href="https://github.com/solprinz/VIAJA-SEGURO"
+                    target="_blank"
+                    class="btn btn-codigo btn-dark btn-sm flex-fill text-center"
+                  >
+                    <i class="fa-brands fa-github me-1"></i> Ver Código
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- TARJETA: LIVING CHARLY -->
+            <div class="col">
+              <div class="card card-proyecto h-100 shadow-sm">
+                <img
+                  src="./img/LivingCharly.png"
+                  class="card-img-top img-web"
+                  alt="Captura de pantalla LIVING CHARLY"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title h5">LIVING CHARLY</h4>
+                  <p class="card-text textos flex-grow-1">
+                    Sitio web institucional desarrollado como "Proyecto Real" en
+                    Coderhouse. Trabajo colaborativo interdisciplinario junto a
+                    estudiantes de Diseño UX/UI para la maquetación y desarrollo
+                    frontend de la plataforma de la marca, traduciendo
+                    componentes y flujos visuales desde Figma a una web
+                    funcional y responsiva.
+                  </p>
+
+                  <div class="mb-3 d-flex gap-1 flex-wrap">
+                    <span class="brands"
+                      ><i class="fa-brands fa-js text-warning me-1"></i
+                      >JavaScript</span
+                    >
+                    <span class="brands"
+                      ><i class="fa-brands fa-react text-info me-1"></i>React
+                      Js</span
+                    >
+                    <span class="brands"
+                      ><i
+                        class="fa-brands fa-sass text-danger-emphasis me-1"
+                      ></i
+                      >SASS</span
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="card-footer bg-transparent border-top-0 d-flex gap-2"
+                >
+                  <a
+                    href="https://livingcharly.com.ar/"
+                    target="_blank"
+                    class="btn btn-demo btn-outline-dark btn-sm flex-fill text-center"
+                  >
+                    <i class="fa-solid fa-eye me-1"></i> Ver Demo
+                  </a>
+                  <a
+                    href="https://github.com/solprinz/livingcharly"
+                    target="_blank"
+                    class="btn btn-codigo btn-dark btn-sm flex-fill text-center"
+                  >
+                    <i class="fa-brands fa-github me-1"></i> Ver Código
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORMULARIO DE CONTACTO -->
+      <section class="contacto container my-5 py-4" id="contacto">
+        <h2 class="secciones">Contacto</h2>
+        <p class="textos mb-4">
+          ¿Tenés alguna consulta o propuesta? ¡Escribime!
+        </p>
+
+        <div class="row g-4 align-items-stretch">
+          <!-- FORMULARIO -->
+          <div class="col-12 col-lg-6">
+            <form
+              action="https://formspree.io/f/xppaejqo"
+              method="POST"
+              class="p-4 rounded shadow-sm bg-light h-100"
+            >
+              <div class="row g-3 mb-3">
+                <div class="col-12 col-md-6">
+                  <label for="nombre" class="form-label fw-medium"
+                    >Nombre completo</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Tu nombre"
+                    required
+                  />
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <label for="email" class="form-label fw-medium"
+                    >Correo electrónico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="nombre@ejemplo.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="mensaje" class="form-label fw-medium"
+                  >Mensaje</label
+                >
+                <textarea
+                  class="form-control"
+                  id="mensaje"
+                  name="mensaje"
+                  rows="4"
+                  placeholder="Escribí tu mensaje acá..."
+                  required
+                ></textarea>
+              </div>
+
+              <div>
+                <button type="submit" class="btn btn-on btn-lg">
+                  Enviar mensaje
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- BOTONES DE CONTACTO -->
+          <div class="col-12 col-lg-6 ps-lg-5">
+            <p class="textos mb-4">
+              También podés explorar mis proyectos o conectar conmigo
+              directamente:
+            </p>
+
+            <div
+              class="d-flex gap-3 flex-wrap justify-content-center justify-content-md-start"
+            >
+              <a
+                href="https://github.com/solprinz"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-on btn-lg"
+              >
+                <i class="fa-brands fa-github me-2"></i>GitHub
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/sol-prinzen/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-off btn-lg"
+              >
+                <i class="fa-brands fa-linkedin me-2"></i>LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-pink py-4 text-white">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"
+      >
+        <div class="text-center text-white-50">
+          © 2026 Sol Prinzen. Todos los derechos reservados.
+        </div>
+
+        <div class="d-flex gap-3">
+          <a
+            href="https://github.com/solprinz"
+            target="_blank"
+            class="text-white social-link"
+            aria-label="GitHub"
+          >
+            <i class="fa-brands fa-github fs-5"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/sol-prinzen/"
+            target="_blank"
+            class="text-white social-link"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin fs-5"></i>
+          </a>
+          <a
+            href="mailto:solagustina.pr@gmail.com"
+            class="text-white social-link"
+            aria-label="Email"
+          >
+            <i class="fa-solid fa-envelope fs-5"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS DE BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
