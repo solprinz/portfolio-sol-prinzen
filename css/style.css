@@ -68,7 +68,7 @@
 }
 
 .hero-titulo {
-  font-family: "Cinzel", sans-serif;
+  font-family: "Cinzel", serif;
   font-size: 4rem;
   letter-spacing: 5px;
   color: var(--rosa-oscuro);
@@ -188,6 +188,7 @@
   display: inline-block;
   color: var(--rosa-oscuro);
   animation: iluminarRosa 3s linear infinite;
+  font-family: "Cinzel", serif;
 }
 
 /* Animaciones en letras */
