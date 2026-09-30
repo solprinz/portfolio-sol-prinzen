@@ -8,6 +8,23 @@
   --gris: #6c757d;
 }
 
+header {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
+  transition: transform 0.3s ease-in-out !important;
+}
+
+header.header-hidden {
+  transform: translateY(-100%) !important;
+}
+
+main {
+  padding-top: 80px;
+}
+
 .logo-header {
   font-family: "Cinzel", serif;
   font-size: 1.25rem;
@@ -112,47 +129,9 @@
   color: var(--gris);
 }
 
-.btn-off {
-  background-color: white;
-  color: var(--rosa-oscuro);
-  border: 3px solid var(--rosa-oscuro);
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.btn-on {
-  background-color: var(--rosa-oscuro);
-  color: #ffffff;
-  border: 3px solid var(--rosa-oscuro);
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.btn-off:hover {
-  background-color: var(--rosa-oscuro);
-  color: #ffffff;
-  border-color: var(--rosa-oscuro);
-}
-
-.btn-on:hover {
-  background-color: white;
-  color: var(--rosa-oscuro);
-  border: 3px solid var(--rosa-oscuro);
-}
-
 .brands {
   font-size: 1.2rem;
   padding-right: 0.5rem;
-}
-
-.btn-demo {
-  padding: 1rem;
-  font-size: 1rem;
-}
-
-.btn-codigo {
-  padding: 1rem;
-  font-size: 1rem;
 }
 
 .img-web {
@@ -176,7 +155,7 @@
 .social-link:hover {
   transform: translateY(-2px);
   opacity: 1;
-  color: #ffffff !important;
+  color: white !important;
 }
 
 /* ANIMACIÓN DEL TÍTULO PRINCIPAL */
@@ -251,4 +230,106 @@
     color: var(--rosa-oscuro);
     text-shadow: none;
   }
+}
+
+/* BOTONES PRINCIPALES */
+.btn-off {
+  background-color: white;
+  color: var(--rosa-oscuro);
+  border: 3px solid var(--rosa-oscuro);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-on {
+  background-color: var(--rosa-oscuro);
+  color: white;
+  border: 3px solid var(--rosa-oscuro);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-off:hover {
+  background-color: var(--rosa-oscuro);
+  color: white;
+  border-color: var(--rosa-oscuro);
+}
+
+.btn-on:hover {
+  background-color: white;
+  color: var(--rosa-oscuro);
+  border: 3px solid var(--rosa-oscuro);
+}
+
+/* BOTON DE FILTRO DE PROYECTO */
+.btn-filtro-proyecto {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+  box-shadow: none;
+  outline: none;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.btn-filtro-proyecto:hover {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+
+.btn-filtro-proyecto:focus,
+.btn-filtro-proyecto:focus-visible,
+.btn-filtro-proyecto:active {
+  border-color: black;
+  box-shadow: none;
+  outline: none;
+}
+
+.btn-filtro-proyecto.activo,
+.btn-filtro-proyecto.activo:hover,
+.btn-filtro-proyecto.activo:focus,
+.btn-filtro-proyecto.activo:focus-visible,
+.btn-filtro-proyecto.activo:active {
+  background-color: black;
+  border-color: black;
+  color: white;
+  box-shadow: none;
+  outline: none;
+}
+
+/* BOTONES DE ACCIÓN (PROYECTO) */
+.btn-demo {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.btn-codigo {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+/* BOTONES DE IDIOMA (HEADER) */
+.btn-lang {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-lang:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.btn-lang.activo,
+.btn-lang.activo:hover {
+  background-color: white;
+  color: var(--rosa-oscuro);
+  border-color: white;
 }
